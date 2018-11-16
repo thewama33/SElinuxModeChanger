@@ -98,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-3979659090641187/3220155633");
 
-        loadAdds();
         addDeviceInfos();
     }
 
@@ -109,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         if (mRewardedVideoAd.isLoaded()) {
             mRewardedVideoAd.show();
         } else {
-            Log.d("TAG", "The interstitial wasn't loaded yet.");
+            Log.d("TAG", "The video wasn't loaded yet.");
         }
 
         if (RootShell.isAccessGiven()) {
@@ -120,11 +119,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
     @OnClick(R.id.layout_gradientColorEnforce)
     public void ChangeSELinuxModeToEnforce() {
 
         mRewardedVideoAd.loadAd(CheckConfigMode(), new AdRequest.Builder().build());
+        if (mRewardedVideoAd.isLoaded()) {
+            mRewardedVideoAd.show();
+        } else {
+            Log.d("TAG", "The video wasn't loaded yet.");
+        }
 
         if (RootShell.isAccessGiven()) {
 
@@ -317,7 +320,6 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_items, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -341,7 +343,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void loadAdds() {
-
 
         mAdView = findViewById(R.id.adView);
         final AdRequest adRequest = new AdRequest.Builder().build();
