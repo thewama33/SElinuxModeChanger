@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "640531873279",
+    "firebase_url": "https://selinuxmodechanger.firebaseio.com",
+    "project_id": "selinuxmodechanger",
+    "storage_bucket": "selinuxmodechanger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640531873279:android:d102bcb0420b93f6",
+        "android_client_info": {
+          "package_name": "com.wama.selinuxmodechanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640531873279-njvgisrugadsnc4risfb7uj59ta2eqvk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wama.selinuxmodechanger",
+            "certificate_hash": "d1d7ae3d36bf3c7d3e349d661ee05940762b667e"
+          }
+        },
+        {
+          "client_id": "640531873279-nhajb7v4qmj96so0cpksve0fctl5po7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYh_wsxg2enbGLy-CRFAdM3tdOSbjAn1Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640531873279-nhajb7v4qmj96so0cpksve0fctl5po7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
