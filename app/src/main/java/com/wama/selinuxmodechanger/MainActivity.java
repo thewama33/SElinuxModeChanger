@@ -1,6 +1,5 @@
 package com.wama.selinuxmodechanger;
 
-import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +20,6 @@ import com.google.android.gms.ads.reward.RewardedVideoAd;
 import com.stericson.RootShell.RootShell;
 import com.stericson.RootShell.exceptions.RootDeniedException;
 import com.stericson.RootShell.execution.Command;
-
 
 import java.io.BufferedReader;
 import java.io.IOException;
